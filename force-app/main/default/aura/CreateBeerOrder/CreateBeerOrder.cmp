@@ -1,0 +1,17 @@
+<!--
+  @File Name          : CreateBeerOrder.cmp
+  @Description        : 
+  @Author             : ChangeMeIn@UserSettingsUnder.SFDoc
+  @Group              : 
+  @Last Modified By   : ChangeMeIn@UserSettingsUnder.SFDoc
+  @Last Modified On   : 10/4/2020, 1:56:15 am
+  @Modification Log   : 
+  Ver       Date            Author      		    Modification
+  1.0    10/4/2020   ChangeMeIn@UserSettingsUnder.SFDoc     Initial Version
+-->
+<aura:component>
+    <div class="slds-var-p-around_small">
+
+        
+    </div>
+</aura:component>	

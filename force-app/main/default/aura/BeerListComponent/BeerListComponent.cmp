@@ -4,13 +4,15 @@
   @Author             : ChangeMeIn@UserSettingsUnder.SFDoc
   @Group              : 
   @Last Modified By   : ChangeMeIn@UserSettingsUnder.SFDoc
-  @Last Modified On   : 8/4/2020, 1:15:39 am
+  @Last Modified On   : 10/4/2020, 1:50:59 am
   @Modification Log   : 
   Ver       Date            Author      		    Modification
   1.0    7/4/2020   ChangeMeIn@UserSettingsUnder.SFDoc     Initial Version
 -->
 <aura:component>
     <aura:attribute name="recordList" type="Object"  />
+    <aura:attribute name="beerId" type="String" />
+    
     <div class= "slds-grid slds-wrap">
         
         <aura:iteration items="{!v.recordList}" var="item">
@@ -36,7 +38,7 @@
                         </div>
                     </p>
                     <aura:set attribute="actions">
-                        <lightning:button variant="brand" label="View Detail" title="View Detail" onclick="{! c.foo }"/>
+                        <lightning:button variant="brand" name ="{!item.Id}"  label="View Detail" title="View Detail" onclick="{! c.showinfo }"/>
                     </aura:set>
                     
                 </lightning:card>
@@ -46,8 +48,16 @@
             </div>
             
         </aura:iteration>
-
+        
+        
+        
 
 
     </div>
-</aura:component>	
+    <div>
+
+        <aura:if isTrue="{!v.beerId != null}">
+            <c:BeerDetails beerId = "{!v.beerId}" />
+        </aura:if>
+    </div>
+</aura:component>
