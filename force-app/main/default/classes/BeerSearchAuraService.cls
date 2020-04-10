@@ -4,7 +4,7 @@
  * @Author             : ChangeMeIn@UserSettingsUnder.SFDoc
  * @Group              : 
  * @Last Modified By   : ChangeMeIn@UserSettingsUnder.SFDoc
- * @Last Modified On   : 8/4/2020, 1:04:29 am
+ * @Last Modified On   : 11/4/2020, 12:36:27 am
  * @Modification Log   : 
  * Ver       Date            Author      		    Modification
  * 1.0    7/4/2020   ChangeMeIn@UserSettingsUnder.SFDoc     Initial Version
@@ -15,7 +15,7 @@ public with sharing class BeerSearchAuraService {
     
     @AuraEnabled
     public static List<SObject> searchBeer(String searchParam){
-        system.debug('in APEX');    
+          
         String likeParam = '%' +searchParam+ '%';
         String query;
         if (searchParam != Null) {
@@ -26,7 +26,7 @@ public with sharing class BeerSearchAuraService {
         }
          
         List<SObject> sObjectList = Database.query(query);
-        system.debug(sObjectList);
+        
         return sObjectList;
 
 

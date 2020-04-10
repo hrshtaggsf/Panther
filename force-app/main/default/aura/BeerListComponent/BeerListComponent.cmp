@@ -4,7 +4,7 @@
   @Author             : ChangeMeIn@UserSettingsUnder.SFDoc
   @Group              : 
   @Last Modified By   : ChangeMeIn@UserSettingsUnder.SFDoc
-  @Last Modified On   : 10/4/2020, 1:50:59 am
+  @Last Modified On   : 10/4/2020, 7:09:36 pm
   @Modification Log   : 
   Ver       Date            Author      		    Modification
   1.0    7/4/2020   ChangeMeIn@UserSettingsUnder.SFDoc     Initial Version
@@ -23,7 +23,7 @@
                     </aura:set>
                     <aura:set attribute="footer">
                         Brewery Name = {!item.Brewery_Name__c}
-                   </aura:set>
+                    </aura:set>
                     <p class = "slds-var-p-horizontal_small" >
                         <div class= "slds-grid slds-gutters">
                             <div class = "slds-col slds-size_1-of-3"> 
@@ -32,8 +32,8 @@
                             <div class = "slds-col slds-size_2-of-3">
                                 <br/><br/>
                                 Name = {!item.Name} <br/> 
-                               ID = {!item.id__c} <br/>
-                               Alcohol = {!item.Alcohol__c} <br/>
+                                ID = {!item.id__c} <br/>
+                                Alcohol = {!item.Alcohol__c} <br/>
                             </div>
                         </div>
                     </p>
@@ -42,22 +42,15 @@
                     </aura:set>
                     
                 </lightning:card>
-                
-            
-                
             </div>
             
         </aura:iteration>
-        
-        
-        
-
-
     </div>
     <div>
-
-        <aura:if isTrue="{!v.beerId != null}">
-            <c:BeerDetails beerId = "{!v.beerId}" />
+        <!-- -->
+       
+        <aura:if isTrue = "{!v.beerId != null}">
+          <c:BeerDetails beerId = "{!v.beerId}" />
         </aura:if>
     </div>
 </aura:component>

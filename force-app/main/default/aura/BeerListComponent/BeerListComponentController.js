@@ -4,6 +4,6 @@
         var beerObj = eventSource.get("v.name");
         console.log("method " + beerObj);
         component.set('v.beerId', beerObj);
-        console.log("method ends" + 'v.beerId');
+        console.log("method ends " + 'v.beerId');
     }
 })
