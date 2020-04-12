@@ -4,7 +4,7 @@
   @Author             : ChangeMeIn@UserSettingsUnder.SFDoc
   @Group              : 
   @Last Modified By   : ChangeMeIn@UserSettingsUnder.SFDoc
-  @Last Modified On   : 10/4/2020, 7:09:36 pm
+  @Last Modified On   : 13/4/2020, 1:29:58 am
   @Modification Log   : 
   Ver       Date            Author      		    Modification
   1.0    7/4/2020   ChangeMeIn@UserSettingsUnder.SFDoc     Initial Version
@@ -12,6 +12,7 @@
 <aura:component>
     <aura:attribute name="recordList" type="Object"  />
     <aura:attribute name="beerId" type="String" />
+    <lightning:overlayLibrary aura:id="overlayLib"/>
     
     <div class= "slds-grid slds-wrap">
         
@@ -49,8 +50,6 @@
     <div>
         <!-- -->
        
-        <aura:if isTrue = "{!v.beerId != null}">
-          <c:BeerDetails beerId = "{!v.beerId}" />
-        </aura:if>
+       
     </div>
 </aura:component>

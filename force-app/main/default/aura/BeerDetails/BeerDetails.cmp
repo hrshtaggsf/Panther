@@ -4,14 +4,14 @@
   @Author             : ChangeMeIn@UserSettingsUnder.SFDoc
   @Group              : 
   @Last Modified By   : ChangeMeIn@UserSettingsUnder.SFDoc
-  @Last Modified On   : 10/4/2020, 7:35:44 pm
+  @Last Modified On   : 13/4/2020, 1:29:57 am
   @Modification Log   : 
   Ver       Date            Author      		    Modification
   1.0    10/4/2020   ChangeMeIn@UserSettingsUnder.SFDoc     Initial Version
 -->
 <aura:component>
   <aura:attribute name="beerId" type="String" />
- 
+  <lightning:navigation aura:id="navigation"/>
   <div class="slds-var-p-around_small">
     <lightning:recordForm
         recordId="{!v.beerId}"
